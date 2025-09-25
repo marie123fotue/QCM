@@ -20,14 +20,14 @@
       "correct_answer": "Titanic"
     },
     {
-      "question": "4. Quelle série met en scène le personnage de Walter White ?",
-      "choices": ["Breaking Bad", "Stranger Things", "Game of Thrones", "The Walking Dead"],
-      "correct_answer": "Breaking Bad"
+      "question": "4. Quelle série met en scène le personnage de Harver Specteur ?",
+      "choices": ["Breaking Bad", "Suits", "Game of Thrones", "The Walking Dead"],
+      "correct_answer": "Suits"
     },
     {
-      "question": "5. Quelle série met en scène le personnage de Walter White ?",
-      "choices": ["Breaking Bad", "Stranger Things", "Game of Thrones", "The Walking Dead"],
-      "correct_answer": "Breaking Bad"
+      "question": "5. Quelle série met en scène le personnage de Good Doctor?",
+      "choices": [" Henri Potter", "Young sheldon", "Game of Thrones", "The Walking Dead"],
+      "correct_answer": "Young sheldon"
     }
   ]
 }

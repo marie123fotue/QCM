@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-center items-center gap-4">
     <!-- Titre du quiz -->
     <div class="flex gap-3 justify-center items-center my-7 w-screen">
-      <div class="flex ml-[1px]">
+      <div class="flex ml-[1px] animate-bounce">
         <!-- Icône -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -10,7 +10,7 @@
         </svg>
       </div>
       <div>
-        <h1 class="text-3xl font-bold text-pink-700">{{ quiz.title }}</h1>
+        <h1 class="text-3xl font-bold text-pink-700 animate-bounce ">{{ quiz.title }}</h1>
       </div>
     </div>
 
