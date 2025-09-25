@@ -5,7 +5,7 @@
   "failure_message": "Dommage! Vous devriez regarder plus de films et de séries",
   "questions": [
     {
-      "question": "1. Dans quel film trouve-t-on le personnage de Jack Dawson ?",
+      "question": "1. Dans quel film trouve-t-on le personnage de good?",
       "choices": ["Titanic", "Le Seigneur des Anneaux", "Inception", "Avatar"],
       "correct_answer": "Titanic"
     },
