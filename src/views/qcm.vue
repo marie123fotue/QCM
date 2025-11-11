@@ -1,4 +1,5 @@
 <template>
+  <RouterView/>
   <div class="flex gap-4 justify-arround center  " :aria-busy="state === 'loading'">
     <div>
       <Quiz :quiz="quiz" v-if="quiz" />
