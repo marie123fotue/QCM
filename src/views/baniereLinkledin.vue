@@ -2,7 +2,7 @@
     <!-- Header -->
 
     <header
-        class="bg-[#000A2B] w-full h-[85px] z-60 px-10 md:h-[100px] flex justify-between items-center  md:px-12 font-poppins fixed top-0 left-0 shadow-lg">
+        class="bg-[#000A2B] w-full h-[65px] z-60 px-10 md:h-[100px] flex justify-between items-center  md:px-12 font-poppins fixed top-0 left-0 shadow-lg">
 
         <!-- Logo -->
         <section class="flex gap-2 w-3/5 md:w-2/5 justify-center text-[24px] md:text-[35px]">
@@ -215,32 +215,7 @@
                 </div>
 
                 <!-- Partie Image (Droite sur desktop, en haut sur mobile) -->
-                <div class="w-full md:w-2/5 lg:w-auto flex justify-center items-center">
-                    <div class="relative group">
-                        <!-- Cercle décoratif en arrière-plan -->
-                        <div
-                            class="absolute -inset-4 bg-gradient-to-r from-[#0FDBD0] to-[#063432] rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500">
-                        </div>
-
-                        <!-- Container de l'image -->
-                        <div
-                            class="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] hover:translate-y-4  hover:border[1px] rounded-full  hover:border-[#0FDBD0]">
-                            <!-- Bordure animée -->
-                            <div class="absolute inset-0 rounded-full border-4 border-[#0FDBD0] animate-pulse"></div>
-
-                            <!-- Image -->
-                            <img src="./../assets/image/unnamed.jpg" alt="Marie Shalice - Développeuse Fullstack"
-                                class="w-full h-full rounded-full  shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
-
-                            <!-- Badge flottant (optionnel) -->
-                            <div
-                                class="absolute bottom-4 right-4 bg-white rounded-full px-4 py-2 shadow-lg flex items-center gap-2">
-                                <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                                <span class="text-sm font-semibold text-gray-700">Disponible</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
             </div>
         </section>
