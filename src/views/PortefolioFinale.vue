@@ -130,39 +130,263 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projets" class="py-20 px-6 lg:px-12">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center text-[#000A2B] mb-12">Mes Projets</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="(project, index) in projects"
-            :key="index"
-            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-          >
-            <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-[#000A2B] mb-2">{{ project.title }}</h3>
-              <p class="text-slate-600 mb-4">{{ project.description }}</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  v-for="(tech, i) in project.technologies"
-                  :key="i"
-                  class="bg-[#0FDBD0] bg-opacity-20 text-[#000A2B] px-3 py-1 rounded-full text-sm font-medium"
-                >
-                  {{ tech }}
-                </span>
-              </div>
-              <button class="flex items-center gap-2 text-[#0FDBD0] hover:text-[#0ac5bb] font-semibold transition-colors">
-                <RouterLink to="/qcm">  voir le projet</RouterLink>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </button>
+     <div class="flex justify-center align-center md:flex-wrap">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Projet 1: LG Stock Web -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600">
+                        <img src="/public/sgStock.jpg" alt="LG Stock Web"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="https://sgstockweb.netlify.app" target="_blank"
+                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            SG-Stock Web
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Site web de présentation d'un ERP de gestion de stock avec comptabilité, gestion des stocks et fournisseurs, entrées/sorties, et commande en ligne.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Laravel</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2: Agence Immobilière -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-orange-500 to-red-600">
+                        <img src="/public/mrDemarcheur.jpg" alt="Agence Immobilière"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="https://mr-le-demarcheur-contrat.netlify.app" target="_blank"
+                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Agence Immobilière : Mr le Demarcheur
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Plateforme interne mettant en relation ambassadeurs et démarcheurs immobiliers. Facilite la gestion des contacts et des transactions.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Gestion de Stock Supermarché -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-green-500 to-teal-600">
+                        <img src="/public/market.jpg" alt="Gestion Stock Supermarché"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="https://sitewebsgst.netlify.app" target="_blank"
+                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Gestion de Stock Supermarché
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Application permettant de gérer un stock supermarché: commander un article, ajouter/modifier des articles, suivi des inventaires.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">MySQL</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4: Application de Recyclage -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-emerald-500 to-green-700">
+                        <img src="/public/EcoFoyer.jpg" alt="Application Recyclage"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="https://mfsm-eco-app.netlify.app" target="_blank"
+                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Application de Recyclage
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Application pour le recyclage de déchets. Facilite la gestion et le suivi des déchets recyclables avec une interface intuitive.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5: Plateforme de Prestation de Services -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-600">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                           <img src="/public/menWork.jpg" alt="Application Recyclage"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            En développement
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Plateforme de Prestation de Services : MENWORK
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Met en relation les prestataires de services locaux et les clients. Plus besoin de chercher un prestataire compétent sur WhatsApp ou Facebook!
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Laravel</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
+
+            <!-- CTA en bas de section -->
+            <div class="text-center mt-16">
+                <p class="text-gray-600 mb-6 text-lg">
+                    Vous avez un projet en tête ?
+                </p>
+                <a href="#contact"
+                    class="inline-flex items-center gap-2 bg-[#0FDBD0] text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#0FDBD0]/50">
+                    Travaillons ensemble
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+
         </div>
-      </div>
-    </section>
 
     <!-- Skills Section -->
     <section id="compétences" class="py-20 px-6 lg:px-12 bg-white">

@@ -13,8 +13,8 @@ import Baniere from "@/views/baniereLinkledin.vue";
 const routes = [
     { path: "/Qcm",component: Qcm},
     { path: "/Accueil",component: Accueil},
-    { path: "/ngh",component: Portefolio},
-      { path: "/",component: Portefoli},
+    { path: "/",component: Portefolio},
+      { path: "/gffg",component: Portefoli},
     { path: "/ii",component: Baniere},
 
 ]

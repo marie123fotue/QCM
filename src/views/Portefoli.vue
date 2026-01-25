@@ -377,331 +377,241 @@
             </div>
 
             <!-- Grille de projets -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Projet 1 -->
-                <div
-                    class="group bg-white rounded-2xl overflow-hidden  transition-all duration-500 hover:-translate-y-2">
-
-                    <!-- Image du projet -->
+            <div class="flex justify-center align-center md:flex-wrap">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Projet 1: LG Stock Web -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div class="relative h-64 overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600">
-                        <img src="./../assets/image/dash.png" alt="SG-Stock - Gestion de stock"
+                        <img src="/public/sgStock.jpg" alt="LG Stock Web"
                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
-
-                        <!-- Overlay au survol -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <div class="flex gap-3">
-                                <a href="#"
+                                <a href="https://sgstockweb.netlify.app" target="_blank"
                                     class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     </svg>
                                     Démo
                                 </a>
-                                <a href="#"
-                                    class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg font-semibold hover:bg-white/30 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                                    </svg>
-                                    Code
-                                </a>
                             </div>
                         </div>
-
-                        <!-- Badge de statut -->
-                        <div
-                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
                             <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                            En Production
-                        </div>
-                    </div>
-
-                    <!-- Contenu du projet -->
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
-                            Calculatrice
-                        </h3>
-                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
-                            Calculatrice en ligne pour effectuer vos differents calculs et facile a implementer dans vos
-                            différents système
-                        </p>
-
-                        <!-- Technologies utilisées -->
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
-
-                            <span
-                                class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">TailwindCSS</span>
-                        </div>
-
-                        <!-- Footer avec icônes -->
-                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                            <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
-                                </svg>
-                                2025
-                            </div>
-                            <a href="#contact"
-                                class="text-[#0FDBD0] hover:text-[#0FDBD0]/80 font-semibold text-sm flex items-center gap-1">
-                                En savoir plus
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projet 2 -->
-                <div
-                    class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-
-                    <!-- Image du projet -->
-                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600">
-                        <img src="./../assets/image/dash.png" alt="SG-Stock - Gestion de stock"
-                            class="w-full h-64 object-center object-contain transform group-hover:scale-110 transition-transform duration-500" />
-
-                        <!-- Overlay au survol -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex gap-3">
-                                <a href="#"
-                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    </svg>
-                                    Démo
-                                </a>
-                                <a href="#"
-                                    class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg font-semibold hover:bg-white/30 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Badge de statut -->
-                        <div
-                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                            En developpement
-                        </div>
-                    </div>
-
-                    <!-- Contenu du projet -->
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
-                            SG-Stock
-                        </h3>
-                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
-                            Application de gestion de stock complète avec tableau de bord, gestion des produits,
-                            alertes de rupture et rapports détaillés.
-                        </p>
-
-                        <!-- Technologies utilisées -->
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue js</span>
-                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwindcss</span>
-
-                            <span
-                                class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">MySQL</span>
-                        </div>
-
-                        <!-- Footer avec icônes -->
-                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                            <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
-                                </svg>
-                                2024 @Copright
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projet 3 -->
-                <div
-                    class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-
-                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-pink-500 to-orange-600">
-                        <img src="./../assets/image/portefolio.png" alt="Portfolio personnel"
-                            class="w-full h-full  transform group-hover:scale-110 transition-transform duration-500" />
-
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex gap-3">
-                                <a href="#"
-                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    </svg>
-                                    Démo
-                                </a>
-                                <a href="#"
-                                    class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg font-semibold hover:bg-white/30 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-
-                        <div
-                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                            En ligne
+                            Déployé
                         </div>
                     </div>
 
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
-                            Portfolio Personnel
+                            SG-Stock Web
                         </h3>
                         <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
-                            Site portfolio moderne et responsive présentant mes compétences, projets et
-                            permettant aux clients de me contacter facilement.
+                            Site web de présentation d'un ERP de gestion de stock avec comptabilité, gestion des stocks et fournisseurs, entrées/sorties, et commande en ligne.
                         </p>
 
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
-                            <span
-                                class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind</span>
-                            <span
-                                class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Netlify</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Laravel</span>
                         </div>
 
                         <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                             <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                2024
+                                2024-2025
                             </div>
-                            <a href="#contact"
-                                class="text-[#0FDBD0] hover:text-[#0FDBD0]/80 font-semibold text-sm flex items-center gap-1">
-                                En savoir plus
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projet 3 -->
-                <div
-                    class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <!-- Projet 2: Agence Immobilière -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-orange-500 to-red-600">
+                        <img src="/public/mrDemarcheur.jpg" alt="Agence Immobilière"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="https://mr-le-demarcheur-contrat.netlify.app" target="_blank"
+                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
 
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Agence Immobilière : Mr le Demarcheur
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Plateforme interne mettant en relation ambassadeurs et démarcheurs immobiliers. Facilite la gestion des contacts et des transactions.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Gestion de Stock Supermarché -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     <div class="relative h-64 overflow-hidden bg-gradient-to-br from-green-500 to-teal-600">
-                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop"
-                            alt="E-commerce"
+                        <img src="/public/market.jpg" alt="Gestion Stock Supermarché"
                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
-
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <div class="flex gap-3">
-                                <a href="#"
+                                <a href="https://sitewebsgst.netlify.app" target="_blank"
                                     class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     </svg>
                                     Démo
                                 </a>
-                                <a href="#"
-                                    class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg font-semibold hover:bg-white/30 transition-all text-sm flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Gestion de Stock Supermarché
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Application permettant de gérer un stock supermarché: commander un article, ajouter/modifier des articles, suivi des inventaires.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">MySQL</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4: Application de Recyclage -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-emerald-500 to-green-700">
+                        <img src="/public/EcoFoyer.jpg" alt="Application Recyclage"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="https://mfsm-eco-app.netlify.app" target="_blank"
+                                    class="bg-[#0FDBD0] text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-[#0FDBD0]/90 transition-all text-sm flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     </svg>
-                                    Code
+                                    Démo
                                 </a>
                             </div>
                         </div>
+                        
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            Déployé
+                        </div>
+                    </div>
 
-                        <div
-                            class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
+                            Application de Recyclage
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
+                            Application pour le recyclage de déchets. Facilite la gestion et le suivi des déchets recyclables avec une interface intuitive.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-2 text-gray-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                                2024-2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5: Plateforme de Prestation de Services -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-600">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                           <img src="/public/menWork.jpg" alt="Application Recyclage"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                             En développement
                         </div>
                     </div>
 
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#0FDBD0] transition-colors">
-                            Boutique en ligne
+                            Plateforme de Prestation de Services : MENWORK
                         </h3>
                         <p class="text-gray-600 mb-4 text-[15px] leading-relaxed">
-                            Plateforme e-commerce complète avec panier, paiement sécurisé,
-                            gestion des commandes et espace administrateur.
+                            Met en relation les prestataires de services locaux et les clients. Plus besoin de chercher un prestataire compétent sur WhatsApp ou Facebook!
                         </p>
 
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
-                            <span
-                                class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Laravel</span>
-                            <span
-                                class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Stripe</span>
-                            <span
-                                class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Vue.js</span>
+                            <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Laravel</span>
                         </div>
 
                         <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                             <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                2024
+                                2025
                             </div>
-                            <a href="#contact"
-                                class="text-[#0FDBD0] hover:text-[#0FDBD0]/80 font-semibold text-sm flex items-center gap-1">
-                                En savoir plus
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -723,6 +633,7 @@
                 </a>
             </div>
 
+        </div>
         </div>
     </section>
     <section id="contact">
@@ -809,14 +720,14 @@
                                         d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                                 </svg>
                             </a>
-                            <a href="#"
+                            <!-- <a href="#"
                                 class="w-9 h-9 bg-white/10 hover:bg-[#0EA5E9] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                                 aria-label="LinkedIn">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                     <path
                                         d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                 </svg>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
